@@ -1,14 +1,14 @@
 {
   "name": "russell-view",
-  "version": "0.1.0",
   "description": " Vistas mínimas via es6 tagged templates ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/santiagogil/russell-view.git"
+    "url": "https://github.com/santiagogil/russell-view.git"
   },
   "keywords": [
     "es6",
@@ -24,7 +24,14 @@
   },
   "homepage": "https://github.com/santiagogil/russell-view#readme",
   "devDependencies": {
+    "cz-conventional-changelog": "^1.1.6",
+    "semantic-release": "^4.3.5",
     "standard": "^7.1.2",
     "tape": "^4.5.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
