@@ -15,7 +15,8 @@
     "template",
     "literals",
     "html",
-    "russell"
+    "russell",
+    "view"
   ],
   "author": "Santiago Gil",
   "license": "MIT",
